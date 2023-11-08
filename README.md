@@ -6,10 +6,10 @@
 
 ### 克隆本仓库
 ### 安装相关依赖并编译
-- 在 Linux 或 MacOS上，运行`make`:
-  ```bash
-  make
-  ```
+在 Linux 或 MacOS上，运行`make`:
+```bash
+make
+```
 ### 下载大模型
 
 运行`download-skywork.py`下载天工大模型，默认存放在`  ~/.cache/huggingface/hub/` 目录下
