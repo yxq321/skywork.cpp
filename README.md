@@ -16,6 +16,12 @@ make
 ```
 ### 从Huggingface上下载大模型
 
+安装依赖:
+
+```bash
+pip3 install huggingface_hub
+```
+
 运行`download-skywork.py`下载天工大模型，默认存放在`  ~/.cache/huggingface/hub/` 目录下
 ```bash
 skywork.cpp# python3 download-skywork.py
