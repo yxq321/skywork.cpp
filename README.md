@@ -1,6 +1,7 @@
-# skywork.cpp | 天工大模型通过CPU来运行
+# skywork.cpp | 天工大模型C语言的实现
 
-- 基于 [llama.cpp](https://github.com/ggerganov/llama.cpp) 通过 C/C++ 来实现的大模型运行环境，可以通过 CPU 就可以直接运行 [天工大模型](https://github.com/SkyworkAI/Skywork)。
+- 本项目为个人研究使用，还在完善中
+- 基于 [llama.cpp](https://github.com/ggerganov/llama.cpp) 通过 C/C++ 来实现的大模型运行环境，可以通过 CPU 就可以直接运行 [天工大模型](https://github.com/SkyworkAI/Skywork)。适合Mac Apple Silicon的笔记本或手头上没有显卡的同学
 
 ## 使用说明
 ### 克隆本仓库
