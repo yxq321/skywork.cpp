@@ -1,53 +1,6 @@
-# llama.cpp
+# skywork.cpp | 天工大模型通过CPU来运行
 
-![llama](https://user-images.githubusercontent.com/1991296/230134379-7181e485-c521-4d23-a0d6-f7b3b61ba524.png)
-
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
-[Roadmap](https://github.com/users/ggerganov/projects/7) / [Project status](https://github.com/ggerganov/llama.cpp/discussions/3471) / [Manifesto](https://github.com/ggerganov/llama.cpp/discussions/205) / [ggml](https://github.com/ggerganov/ggml)
-
-Inference of [LLaMA](https://arxiv.org/abs/2302.13971) model in pure C/C++
-
-### Hot topics
-
-- ⚠️ **Upcoming change that might break functionality. Help with testing is needed:** https://github.com/ggerganov/llama.cpp/pull/3912
-
-----
-
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#description">Description</a>
-    </li>
-    <li>
-      <a href="#usage">Usage</a>
-      <ul>
-        <li><a href="#get-the-code">Get the Code</a></li>
-        <li><a href="#build">Build</a></li>
-        <li><a href="#blas-build">BLAS Build</a></li>
-        <li><a href="#prepare-data--run">Prepare Data & Run</a></li>
-        <li><a href="#memorydisk-requirements">Memory/Disk Requirements</a></li>
-        <li><a href="#quantization">Quantization</a></li>
-        <li><a href="#interactive-mode">Interactive mode</a></li>
-        <li><a href="#constrained-output-with-grammars">Constrained output with grammars</a></li>
-        <li><a href="#instruction-mode-with-alpaca">Instruction mode with Alpaca</a></li>
-        <li><a href="#using-openllama">Using OpenLLaMA</a></li>
-        <li><a href="#using-gpt4all">Using GPT4All</a></li>
-        <li><a href="#using-pygmalion-7b--metharme-7b">Using Pygmalion 7B & Metharme 7B</a></li>
-        <li><a href="#obtaining-the-facebook-llama-original-model-and-stanford-alpaca-model-data">Obtaining the Facebook LLaMA original model and Stanford Alpaca model data</a></li>
-        <li><a href="#verifying-the-model-files">Verifying the model files</a></li>
-        <li><a href="#seminal-papers-and-background-on-the-models">Seminal papers and background on the models</a></li>
-        <li><a href="#perplexity-measuring-model-quality">Perplexity (measuring model quality)</a></li>
-        <li><a href="#android">Android</a></li>
-        <li><a href="#docker">Docker</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#coding-guidelines">Coding guidelines</a></li>
-    <li><a href="#docs">Docs</a></li>
-  </ol>
-</details>
+- 基于 [llama.cpp](https://github.com/ggerganov/llama.cpp) 通过 C/C++ 来实现的大模型运行环境，可以通过 CPU 就可以直接运行 [天工大模型](https://github.com/SkyworkAI/Skywork)。
 
 ## Description
 
