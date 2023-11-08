@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# HF baichuan --> gguf conversion
+# HF skywork / baichuan --> gguf conversion
 
 from __future__ import annotations
 
@@ -110,7 +110,9 @@ print("gguf: loading model "+dir_model.name)
 with open(dir_model / "config.json", "r", encoding="utf-8") as f:
     hparams = json.load(f)
 print("hello print: ",hparams["architectures"][0])
-if hparams["architectures"][0] != "BaichuanForCausalLM" and hparams["architectures"][0] != "BaiChuanForCausalLM":
+if hparams["architectures"][0] != "SkyworkForCausalLM" and \
+    hparams["architectures"][0] != "BaichuanForCausalLM" and \
+    hparams["architectures"][0] != "BaiChuanForCausalLM":
     print("Model architecture not supported: " + hparams["architectures"][0])
 
     sys.exit()
@@ -118,7 +120,11 @@ if hparams["architectures"][0] != "BaichuanForCausalLM" and hparams["architectur
 # get number of model parts
 num_parts = count_model_parts(dir_model)
 print(f"num_parts:{num_parts}\n")
-ARCH=gguf.MODEL_ARCH.BAICHUAN
+if hparams["architectures"][0] == "SkyworkForCausalLM":
+    ARCH=gguf.MODEL_ARCH.SKYWORK
+else:
+    ARCH = gguf.MODEL_ARCH.BAICHUAN
+
 gguf_writer = gguf.GGUFWriter(fname_out, gguf.MODEL_ARCH_NAMES[ARCH], endianess=endianess)
 
 print("gguf: get model metadata")
