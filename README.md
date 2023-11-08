@@ -3,8 +3,12 @@
 - 基于 [llama.cpp](https://github.com/ggerganov/llama.cpp) 通过 C/C++ 来实现的大模型运行环境，可以通过 CPU 就可以直接运行 [天工大模型](https://github.com/SkyworkAI/Skywork)。
 
 ## 使用说明
-
 ### 克隆本仓库
+```bash
+git clone https://github.com/yxq321/skywork.cpp
+cd skywork.cpp
+```
+
 ### 安装相关依赖并编译
 在 Linux 或 MacOS上，运行`make`:
 ```bash
